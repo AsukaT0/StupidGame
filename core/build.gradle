@@ -16,6 +16,7 @@ dependencies {
   api "com.github.tommyettinger:regexodus:$regExodusVersion"
   api "com.rafaskoberg.gdx:typing-label:$typingLabelVersion"
   api "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+  api fileTree(dir: '/home/asuka/Projects/Game/StupidGame/libs', include: ['*.aar', '*.jar'], exclude: [])
   if(enableGraalNative == 'true') {
     implementation "io.github.berstanio:gdx-svmhelper-annotations:$graalHelperVersion"
   }

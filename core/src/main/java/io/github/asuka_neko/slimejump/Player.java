@@ -60,8 +60,8 @@ public class Player {
                 // Проверяем, стоим ли мы на платформе сверху
                 if (
                     (position.y > platform.getBounds().y && velocity.y <= 0) && (
-                        position.x + size.x >= platform.getBounds().x
-                            && position.x - size.x <= platform.getBounds().x + platform.getBounds().width)
+                        position.x + size.x/2 >= platform.getBounds().x
+                            && position.x +size.x/2 <= platform.getBounds().x + platform.getBounds().width)
                 ) {
                     position.y = platform.getBounds().y + platform.getBounds().height;
                     velocity.y = 0; // Останавливаем падение
